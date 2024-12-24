@@ -1,10 +1,20 @@
+
+# Win11
+
 https://schneegans.de/windows/unattend-generator/
 
 
 
-install apps:
-Go to https://apps.microsoft.com/store/apps
-Search for your App
-Copy the ID from the URL, for example: 9WZDNCRFJ3TJ
-run the following command winget install 9WZDNCRFJ3TJ -s msstore
-If you do not have winget here are some instructions how to install: https://github.com/microsoft/winget-cli
+1. Go to [Microsoft Store](https://apps.microsoft.com/store/apps).
+2. Search for your desired app.
+3. Copy the ID from the URL. For example: `9WZDNCRFJ3TJ`.
+4. Run the following command to install the app:
+
+   ```bash
+   winget install 9WZDNCRFJ3TJ -s msstore
+
+
+##Install Chocolatey
+
+  ```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
